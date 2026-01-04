@@ -1,4 +1,4 @@
-import random, string
+import random, string, getpass, sys
 
 defaultLengthOfStrings = 24
 defaultNumberOfRandomStrings = 10
@@ -43,3 +43,6 @@ print(
 
 for i in range(int(numberOfRandomStrings)):
     print(f'Random String #{i+1}: {generateRandomString(lengthOfStrings, True)}')
+
+getpass.getpass("\nPress the Enter key to exit...") # hacky use of getpass to allow users to see the results if they run it without using CLI.
+sys.exit(0)
